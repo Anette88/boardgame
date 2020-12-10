@@ -2,9 +2,14 @@
 
 // Random method
 
-function randomFunction() {
+function randomFunction(secondValue) {
 	var x = Math.floor((Math.random()*6)+1);
 	document.getElementById("number").innerHTML = x;
+
+
+	var fValue = document.getElementById("number");
+      number.innerHTML = parseInt(fValue.innerHTML) +
+      parseInt(secondValue);
 }
 
 
