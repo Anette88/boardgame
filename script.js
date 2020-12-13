@@ -1,4 +1,19 @@
 
+// Data from JSON file to be displayed in cards
+
+fetch('API/characters.json')
+	.then(result => result.json())
+	.then((res) => {
+		retrieveData(res);
+	})
+	.catch(err => console.log(err))
+
+function retrieveData(info) {
+
+}
+
+
+
 
 // Random method
 
@@ -7,9 +22,11 @@ function randomFunction(secondValue) {
 	document.getElementById("number").innerHTML = x;
 
 
-	var fValue = document.getElementById("number");
-      number.innerHTML = parseInt(fValue.innerHTML) +
-      parseInt(secondValue);
+// Adding the value of x 
+	document.getElementById("number").addEventListener("click", function() {
+
+	})
+
 }
 
 
