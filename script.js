@@ -1,43 +1,41 @@
 
-// Data from JSON file to be displayed in cards
-
-fetch('API/characters.json')
-	.then(result => result.json())
-	.then((res) => {
-		retrieveData(res);
-	})
-	.catch(err => console.log(err))
-
-function retrieveData(info) {
-
-}
-
-
-
 
 // Random method
 
-function randomFunction(secondValue) {
-	var x = Math.floor((Math.random()*6)+1);
-	document.getElementById("number").innerHTML = x;
+let diceRoll;
+let player1Score = 0;
 
 
-// Adding the value of x 
-	document.getElementById("number").addEventListener("click", function() {
+function rollDice(secondValue) {
+diceRoll = Math.floor((Math.random()*6)+1);
+	document.getElementById("number").innerHTML = diceRoll;
 
-	})
-
+	player1Score = player1Score + diceRoll;
 }
 
 
 
+
+
+//creating board
 
 const board = document.querySelector(".circles");
 
+let makeCircle;
+
 function boardGame () {
-	for(let i = 1; i <= 30; i++) {
-		board.innerHTML += '<div class="circle"><div class="token"></div></div>';
+	for(let makeCircle = 1; makeCircle <= 30; makeCircle++) {
+		board.innerHTML += `<div class="circle">${makeCircle}</div>`;
 	}
 }
+
+
+
+
+
+
+
+//<div class="token"></div>
+
 
 boardGame ();
