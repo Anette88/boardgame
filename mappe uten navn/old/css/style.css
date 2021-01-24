@@ -1,0 +1,40 @@
+.circles {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.circle {
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	border: 1px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 1em;
+}
+
+.card {
+	border: 1px solid black;
+	width:25%;
+	float:left;
+	margin-left: 15px;
+	margin-bottom: 20px;
+}
+.token {
+	height:80px;
+	margin:0;
+	padding:0;
+}
+
+.token1 {
+	height:80px;
+	margin:0;
+	padding:0;
+}
+
+.token2 {
+	height:80px;
+	margin:0;
+	padding:0;
+}
