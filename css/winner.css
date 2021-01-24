@@ -1,0 +1,18 @@
+body {
+	background-color: #C6AF9C;
+	width:1000px;
+}
+
+
+
+.circle {
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	border: 5px solid #7C6E62;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 1em;
+	background-color: #A686AF;
+}

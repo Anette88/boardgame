@@ -53,10 +53,8 @@ function rollDice() {
     if (playerTurn === 1) {
         total1 = total1 + newRoll;
         if (total1 >= totalSteps) {
-          window.localStorage.setItem("winner", "Player1");
-
             // store player1 in localstorage
-            location.href = "winner.html";
+            location.href = "winner1.html";
         }
         if (total1 === 7) {
           total1 = 4;
@@ -74,10 +72,8 @@ function rollDice() {
     else {
         total2 = total2 + newRoll;
         if (total2 >= totalSteps) {
-          window.localStorage.setItem("winner", "Player2");
-
             // store player1 in localstorage
-            location.href = "winner.html";
+            location.href = "winner2.html";
         }
         if (total2 === 7) {
           total2 = 4;
